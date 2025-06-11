@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    --primary-font:Roboto;
+    --primary-color:#ffffff;
+    --button-color:#596D48;
+    --valid-password-border:lightgreen;
+    --invalid-password-border:red;
+    --input-border:#E5E7EB;
+}
+/* COLOR VALIDATION */
+
+body{
+    font-family: var(--primary-font, 'San serif');
+    font-size: small;
+    color:var(--primary-color);
+    background-image: url(./image.png);
+}
+/* LABELS */
+label{
+    font-size: 12px;
+}
+.page{
+    display:flex;
+}
+
+.left{
+    width:40vw;
+    margin-right: auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.icon{
+    display:flex;
+    background-color: black;
+    opacity:0.6;
+    color:#ffffff;
+}
+/* RIGHT BAR */
+.right{
+    color:black;
+    background-color: var(--primary-color);
+    height:100vh;
+    background-color:rgb(244, 244, 238);
+    display: flex;
+    align-items: center;
+}
+.work-area{
+    align-self: center;
+    padding:12px;
+}
+.signup{
+    padding:24px;
+    background-color: white;
+    margin:auto;
+    display:flex;
+    gap:32px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin:12px;
+}
+#l-1,#l-2{
+   display: flex;
+   flex-direction: column;
+   gap:15px;
+}
+
+/*BUTTON */
+#btn{
+    outline:none;
+    border:none;
+    border-radius:8px;
+    padding:12px;
+    background-color: var(--button-color);
+}
+#span{
+   color:#596D48; 
+}
+
+/* -aragraph */
+p{
+    margin:20px;
+    font-size: 20px;;
+}
+input{
+    width:100%;
+    padding:4px;
+}
+input:valid{
+    border:2px solid var(--valid-password-border);
+}
+input:invalid{
+    border:2px var(--invalid-password-border);
+}
